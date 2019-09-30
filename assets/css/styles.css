@@ -1,0 +1,83 @@
+/* IMPORTANDO FONTE LOCAL */
+@font-face {
+    /* O NOME DA FAMILIA É DE LIVRE ESCOLHA */
+    font-family: 'Pokemon Solid';
+    /* CAMINHO DO ARQUIVO */
+    src: url('../fonts/Pokemon Solid.ttf')
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+div {
+    height: 100%;
+}
+
+body {
+    /* FONTES */
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #ffcc36;
+    text-shadow: 2px 2px 0 #2f6db5, 2px -2px 0 #2f6db5, -2px 2px 0 #2f6db5,
+    -2px -2px 0 #2f6db5, 2px 0px 0 #2f6db5, 0px 2px 0 #2f6db5,
+    -2px 0px 0 #2f6db5, 0px -2px 0 #2f6db5;
+
+    /* IMAGEM DE FUNDO */
+    background-image: url('../img/bg.png');
+    /* primeiro largura e depois altura: X / Y */
+    background-size: 73% 100%;
+    background-position: left;
+
+    /* FLEX BOX */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+div {
+    width: 35%;
+    background-color: #f9f9f9;
+    border-left: 3px solid #2f6db5;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div > form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+div > form > input {
+    padding: 10px;
+    border: 2px solid #2f6db5;
+    outline: none;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+
+div > form > label {
+    text-align: center;
+    font-size: 22px;
+}
+
+div > p {
+    font-size: 30px;
+    text-align: center;
+}
+
+img {
+    width: 40%;
+    height: 40%;
+    filter: brightness(0);
+    pointer-events: none;
+}
